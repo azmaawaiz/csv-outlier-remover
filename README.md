@@ -34,6 +34,8 @@ The application currently processes the following numerical columns:
 * Loan Term (Months)
 * Interest Rate
 
+The example csv file is added named "Consumer_Lending_Dataset_10000.csv" in this reposiitory for self testing the code. 
+
 ## 🛠 Technologies Used
 
 * Python
