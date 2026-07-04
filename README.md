@@ -24,18 +24,6 @@ Outliers can distort statistical analysis, reduce the accuracy of machine learni
 
 ## Installation
 
-Clone this repository:
-
-```bash
-git clone https://github.com/yourusername/csv-outlier-removal-tool.git
-```
-
-Navigate to the project directory:
-
-```bash
-cd csv-outlier-removal-tool
-```
-
 Install the required libraries:
 
 ```bash
