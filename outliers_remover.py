@@ -37,7 +37,7 @@ def remove_outliers_iqr(file_path, output_path):
         'Annual_Income', 'Debt_to_Income_Ratio', 'Employment_Length_Years',
         'Credit_Lines_Outstanding', 'Loan_Amount', 'FICO_Score',
         'Previous_Delinquencies', 'Loan_Term_Months', 'Interest_Rate_%'
-    ]
+    ] # Remember to carefully rename the columns accurately
     
     initial_rows = df.shape[0]
     mask = pd.Series(True, index=df.index)
