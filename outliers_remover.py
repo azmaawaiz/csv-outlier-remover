@@ -4,7 +4,6 @@ import pandas as pd
 from tkinter import Tk
 from tkinter.filedialog import askopenfilename
 
-# 1. Function to open a file dialog cleanly
 def choose_file_dialog(initial_dir):
     root = Tk()
     root.withdraw()       # Hide the main small window
@@ -66,8 +65,6 @@ def remove_outliers_iqr(file_path, output_path):
     print(f"Rows before: {initial_rows} | Rows after: {df_clean.shape[0]} ({removed_rows} removed)")
     print(f"Cleaned dataset saved directly to: '{output_path}'")
 
-# --- EXECUTION & PATH ROUTING ---
-
 # Automatically routes output to the active user's system Downloads folder
 home_dir = os.path.expanduser("~")
 downloads_folder = os.path.join(home_dir, "Downloads")
@@ -82,9 +79,9 @@ try:
     if platform.system() == 'Windows':
         os.startfile(output_filename) # Works perfectly on Windows
     elif platform.system() == 'Darwin':  # macOS
-        os.system(f'open "{output_filename}"') # FIXED: Changed from startfile to system
+        os.system(f'open "{output_filename}"') 
     else:  # Linux
-        os.system(f'xdg-open "{output_filename}"') # FIXED: Changed from startfile to system
+        os.system(f'xdg-open "{output_filename}"')
 except Exception as e:
     print(f"Could not open file automatically: {e}")
 
@@ -92,7 +89,7 @@ print("="*40)
 print("Excel file has been requested to open.")
 print("="*40)
     
-# Keep code running/prompt user 
+# Keep code running
 while True:
     user_choice = input("Do you want to end the Python code? (yes/no): ").strip().lower()
     
