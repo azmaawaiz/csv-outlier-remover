@@ -122,7 +122,3 @@ This project was created to strengthen my skills in:
 * Building user-friendly data science tools
 
 The goal was not only to implement the IQR algorithm but also to create a practical application that improves the user experience by eliminating hardcoded file paths, automating file management, and providing informative feedback throughout the data-cleaning process.
-
-## 📄 License
-
-This project is available under the MIT License.
